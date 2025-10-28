@@ -1,0 +1,197 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#181B22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:text="Detalhes"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editTitulo"
+            android:hint="Ex.: Comprar mantimentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/editDescricao"
+            android:hint="Itens: leite, pão, frutas..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:layout_marginTop="12dp" />
+
+        <!-- Data e Hora -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnData"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Hoje"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnHora"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="18:00"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Prioridade -->
+        <TextView
+            android:text="Prioridade"
+            android:textColor="#fff"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/prioridadeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbBaixa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Baixa" />
+            <RadioButton
+                android:id="@+id/rbMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Média" />
+            <RadioButton
+                android:id="@+id/rbAlta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Alta" />
+        </RadioGroup>
+
+
+
+        <!-- Categoria -->
+        <TextView
+            android:text="Categoria"
+            android:textColor="#fff"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/categoriaGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbPessoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pessoal"
+                android:textColor="#fff"
+                android:buttonTint="#9C27B0"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbTrabalho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trabalho"
+                android:textColor="#fff"
+                android:buttonTint="#9C27B0"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEstudos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estudos"
+                android:textColor="#fff"
+                android:buttonTint="#9C27B0"
+                android:padding="8dp" />
+        </RadioGroup>
+
+
+        <!-- Lembrete e Repetir -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:text="Lembrete:"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvLembrete"
+                android:text="30 min antes"
+                android:textColor="#FFA500"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:text="Repetir:"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvRepetir"
+                android:text="Nunca"
+                android:textColor="#FFA500"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Botões -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="end">
+            <Button
+                android:id="@+id/btnDescartar"
+                android:text="Descartar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnAdicionar"
+                android:text="Adicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
