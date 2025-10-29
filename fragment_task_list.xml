@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Lista de Tarefas"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTask"
+        android:hint="Digite uma tarefa..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_accent"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:text="Adicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray_accent"
+        android:textColor="@color/white"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Filtros e lista -->
+    <!-- Adicione aqui RecyclerView para lista de tarefas e botões de filtro conforme imagem 4 -->
+
+</LinearLayout>
